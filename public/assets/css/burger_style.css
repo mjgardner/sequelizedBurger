@@ -1,0 +1,13 @@
+body {
+  background-color: yellow;
+}
+.jumbotron {
+  background-color: lightyellow;
+}
+.list-group-item {
+  color: yellow;
+  background-color: lightcoral;
+}
+form {
+  margin-top: 1em;
+}
