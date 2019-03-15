@@ -1,4 +1,4 @@
-# burger: The Eat-Da-Burger! restaurant app
+# sequelizedBurger: The Eat-Da-Burger! restaurant app with an ORM
 
 [Eat-Da-Burger!](https://eat-da-burger-4.herokuapp.com/) is a restaurant app
 that lets users input the names of burgers they'd like to eat. Whenever a user
@@ -34,5 +34,5 @@ dependencies, and then `npm start` to start the application.
 * [Font Awesome](https://fontawesome.com/)
 * [Handlebars](http://handlebarsjs.com/) and [Express Handlebars](https://github.com/ericf/express-handlebars)
 * [jQuery](https://jquery.com/)
-* [mysql](https://github.com/mysqljs/mysql#readme)
+* [Node MySQL 2](https://github.com/sidorares/node-mysql2#readme)
 * [Sequelize](http://docs.sequelizejs.com/)
