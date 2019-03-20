@@ -1,16 +1,16 @@
 var express = require("express");
 var router = express.Router();
-
-var Burger = require("../models/burger");
+var db = require("../models");
+debugger;
 
 router.get("/", function(req, res) {
-  Burger.findAll({}).then(function(burgers) {
+  db.Burger.findAll({}).then(function(burgers) {
     res.render("index", { burgers: burgers });
   });
 });
 
 router.post("/api/burgers", function(req, res) {
-  Burger.create({
+  db.Burger.create({
     burgerName: req.body.burgerName
   }).then(function(burger) {
     res.json({ id: burger.id });
@@ -18,7 +18,7 @@ router.post("/api/burgers", function(req, res) {
 });
 
 router.post("/api/burgers/:id", function(req, res) {
-  Burger.findByPk(req.params.id).then(function(burger) {
+  db.Burger.findByPk(req.params.id).then(function(burger) {
     if (burger) {
       burger.devoured = true;
       burger.save().then(function() {
