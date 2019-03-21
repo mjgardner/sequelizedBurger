@@ -1,6 +1,6 @@
 # sequelizedBurger: The Eat-Da-Burger! restaurant app with an ORM
 
-[Eat-Da-Burger!](https://eat-da-burger-4.herokuapp.com/) is a restaurant app
+[Eat-Da-Burger!](https://eat-da-burger-sequelize-1.herokuapp.com/) is a restaurant app
 that lets users input the names of burgers they'd like to eat. Whenever a user
 submits a burger's name, the app displays the burger on the left side of the
 page -- waiting to be devoured.  Each burger in the waiting area also has a
