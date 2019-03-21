@@ -4,7 +4,9 @@ var db = require("../models");
 debugger;
 
 router.get("/", function(req, res) {
-  db.Burger.findAll({}).then(function(burgers) {
+  db.Burger.findAll({
+    order: [["burgerName", "ASC"]]
+  }).then(function(burgers) {
     res.render("index", { burgers: burgers });
   });
 });
